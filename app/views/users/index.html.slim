@@ -1,0 +1,15 @@
+table.table.table-striped.table-bordered.zero-configuration
+  thead.thead-inverse
+    tr.text-white
+      th Name
+      th Action
+  tbody
+    - if @users.present? 
+      -@users.each do |user|
+        tr
+          td = user.name
+        
+          td.btn-group
+            = link_to 'Edit',edit_user_path(user) , class: " icon-edit2 large-icon" , title: "Edit"
+            = link_to 'new', new_user_path
+            = link_to 'role', roles_path
