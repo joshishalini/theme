@@ -1,5 +1,7 @@
 class RolesController < ApplicationController
 
+	layout "home"
+	
 	def index
 		@roles = Role.all
 	end
@@ -34,6 +36,16 @@ class RolesController < ApplicationController
 	  	p "=============error!============="
 			p @role.errors.full_messages.join(', ')
 		end
+	end
+
+	def destroy
+		@role = Role.find(params[:id])
+		if @role.destroy
+			redirect_to roles_path
+		else
+			p "=============error!============="
+			p @role.errors.full_messages.join(', ')
+		end			
 	end
 
 	private

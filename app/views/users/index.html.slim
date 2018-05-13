@@ -8,8 +8,5 @@ table.table.table-striped.table-bordered.zero-configuration
       -@users.each do |user|
         tr
           td = user.name
-        
           td.btn-group
             = link_to 'Edit',edit_user_path(user) , class: " icon-edit2 large-icon" , title: "Edit"
-            = link_to 'new', new_user_path
-            = link_to 'role', roles_path

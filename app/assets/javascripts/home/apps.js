@@ -98,9 +98,9 @@ var BlankonApp = function(){
         handleCheckCookie: function () {
             // Check (onLoad) if the cookie is there and set the class if it is
             // Set cookie sidebar minimize page
-            if ($.cookie('page_sidebar_minimize') == 'active') {
-                $('body').addClass('page-sidebar-minimize');
-            }
+            // if ($.cookie('page_sidebar_minimize') == 'active') {
+            //     $('body').addClass('page-sidebar-minimize');
+            // }
         },
 
         // =========================================================================

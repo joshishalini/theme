@@ -1,0 +1,315 @@
+    header#header
+      /! Start header left
+      .header-left
+        /! Start offcanvas left: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior
+        .navbar-minimize-mobile.left
+          i.fa.fa-bars
+        /! / End offcanvas left
+        /! Start navbar header
+        .navbar-header
+          /! Start brand
+          a.navbar-brand href="dashboard.html" 
+            img.logo alt=("brand logo") src="http://img.djavaui.com/?create=175x50,81B71A?f=ffffff" /
+          /! /.navbar-brand
+          /! / End brand
+        /! /.navbar-header
+        /! / End navbar header
+        /! Start offcanvas right: This menu will take position at the top of template header (mobile only). Make sure that only #header have the `position: relative`, or it may cause unwanted behavior
+        .navbar-minimize-mobile.right
+          i.fa.fa-cog
+        /! / End offcanvas right
+        .clearfix
+      /! /.header-left
+      /! / End header left
+      /! Start header right
+      .header-right
+        /! Start navbar toolbar
+        .navbar.navbar-toolbar
+          /! Start left navigation
+          ul.nav.navbar-nav.navbar-left
+            /! Start sidebar shrink
+            li.navbar-minimize
+              a href="javascript:void(0);" title=("Minimize sidebar") 
+                i.fa.fa-bars
+            /! / End sidebar shrink
+            /! Start form search
+            li.navbar-search
+              /! Just view on mobile screen
+              a.trigger-search href="#" 
+                i.fa.fa-search
+              / form.navbar-form
+                .form-group.has-feedback
+                  input.form-control.rounded placeholder=("Search for people), places and things" type="text" /
+                  button.btn.btn-theme.fa.fa-search.form-control-feedback.rounded type="submit" 
+            /! / End form search
+          /! /.nav navbar-nav navbar-left
+          /! / End left navigation
+          /! Start right navigation
+          ul.nav.navbar-nav.navbar-right
+            /! /.nav navbar-nav navbar-right
+            /! Start messages
+            li.dropdown.navbar-message
+              a.dropdown-toggle data-toggle="dropdown" href="#" 
+                i.fa.fa-envelope-o
+                span.rounded.count.label.label-danger 7
+              /! Start dropdown menu
+              .dropdown-menu.animated.flipInX
+                .dropdown-header
+                  span.title
+                    | Messages
+                    strong (7)
+                  span.option.text-right
+                    a href="#"  + New message
+                .dropdown-body
+                  /! Start message search
+                  form.form-horizontal action="#" 
+                    .form-group.has-feedback.has-feedback-sm.m-5
+                      input.form-control.input-sm placeholder=("Search message...") type="text" /
+                      button.btn.btn-theme.fa.fa-search.form-control-feedback type="submit" 
+                  /! / End message search
+                  /! Start message list
+                  .media-list.niceScroll
+                    a.media href="page-messages.html" 
+                    .pull-left
+                      img.media-object.img-circle alt="..." src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" /
+                    .media-body
+                      span.media-heading John Kribo
+                      span.media-text I was impressed how fast the content is loaded. Congratulations. nice design.
+                      /! Start meta icon
+                      span.media-meta
+                        i.fa.fa-reply
+                      span.media-meta
+                        i.fa.fa-paperclip
+                      span.media-meta.pull-right 13 minutes
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="page-messages.html" 
+                    .pull-left
+                      img.media-object.img-circle alt="..." src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" /
+                    .media-body
+                      span.media-heading Jennifer Poiyem
+                      span.media-text It’s Simple, Clean & Nice .. Good work Dear .. GLWS
+                      /! Start meta icon
+                      span.media-meta.pull-right 17 hours
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="page-messages.html" 
+                    .pull-left
+                      img.media-object.img-circle alt="..." src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" /
+                    .media-body
+                      span.media-heading Clara Wati
+                      span.media-text Great work! Do you have any plans to add loading indicators for AJAX calls that might take longer than normal?
+                      /! Start meta icon
+                      span.media-meta.pull-right 1 days
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="page-messages.html" 
+                    .pull-left
+                      img.media-object.img-circle alt="..." src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" /
+                    .media-body
+                      span.media-heading Toni Mriang
+                      span.media-text I am very interested in the theme and I’m thinking about buying it.
+                      /! Start meta icon
+                      span.media-meta
+                        i.fa.fa-paperclip
+                      span.media-meta.pull-right 2 days
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="page-messages.html" 
+                    .pull-left
+                      img.media-object.img-circle alt="..." src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" /
+                    .media-body
+                      span.media-heading Bella negoro
+                      span.media-text Great work! Good luck!
+                      /! Start meta icon
+                      span.media-meta
+                        i.fa.fa-paperclip
+                      span.media-meta
+                        i.fa.fa-user
+                      span.media-meta.pull-right 1 week
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="page-messages.html" 
+                    .pull-left
+                      img.media-object.img-circle alt="..." src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" /
+                    .media-body
+                      span.media-heading Kim Mbako
+                      span.media-text Hi! First of all, thank you for the very nice theme for creating awesome web applications :)
+                      /! Start meta icon
+                      span.media-meta
+                        i.fa.fa-paperclip
+                      span.media-meta.pull-right 1 week
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="page-messages.html" 
+                    .pull-left
+                      img.media-object.img-circle alt="..." src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" /
+                    .media-body
+                      span.media-heading Pack Suparman
+                      span.media-text Apik temen kie jan template, nyong gep tuku jal..
+                      /! Start meta icon
+                      span.media-meta.pull-right 1 week
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    /! Start message indicator
+                    a.media.indicator.inline href="#" 
+                      span.spinner Load more messages...
+                    /! / End message indicator
+                  /! / End message list
+                .dropdown-footer
+                  a href="page-messages.html"  See All
+              /! / End dropdown menu
+            /! /.navbar-message
+            /! / End messages
+            /! Start notifications
+            li.dropdown.navbar-notification
+              a.dropdown-toggle data-toggle="dropdown" href="#" 
+                i.fa.fa-bell-o
+                span.rounded.count.label.label-danger 6
+              /! Start dropdown menu
+              .dropdown-menu.animated.flipInX
+                .dropdown-header
+                  span.title
+                    | Notifications
+                    strong (10)
+                  span.option.text-right
+                    a href="#" 
+                      i.fa.fa-cog
+                      | Setting
+                .dropdown-body.niceScroll
+                  /! Start notification list
+                  .media-list.small
+                    a.media href="#" 
+                    .media-object.pull-left
+                      i.fa.fa-share-alt.fg-info
+                    .media-body
+                      span.media-text
+                        strong Dolanan Remi :
+                        strong Chris Job,
+                        strong Denny Puk
+                        | and
+                        strong Joko Fernandes
+                        | sent you
+                        strong 5 free energy boosts and other request
+                      /! Start meta icon
+                      span.media-meta 3 minutes
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="#" 
+                    .media-object.pull-left
+                      i.fa.fa-cogs.fg-success
+                    .media-body
+                      span.media-text Your sistem is updated
+                      /! Start meta icon
+                      span.media-meta 5 minutes
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="#" 
+                    .media-object.pull-left
+                      i.fa.fa-ban.fg-danger
+                    .media-body
+                      span.media-text 3 Member is BANNED
+                      /! Start meta icon
+                      span.media-meta 5 minutes
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="#" 
+                    .media-object.pull-left
+                      img.img-circle alt="..." src="http://img.djavaui.com/?create=30x30,4888E1?f=ffffff" /
+                    .media-body
+                      span.media-text daddy pushed to project Blankon version 1.0.0
+                      /! Start meta icon
+                      span.media-meta 45 minutes
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="#" 
+                    .media-object.pull-left
+                      i.fa.fa-user.fg-info
+                    .media-body
+                      span.media-text Change your user profile
+                      /! Start meta icon
+                      span.media-meta 1 days
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    a.media href="#" 
+                    .media-object.pull-left
+                      i.fa.fa-book.fg-info
+                    .media-body
+                      span.media-text Added new article
+                      /! Start meta icon
+                      span.media-meta 1 days
+                      /! / End meta icon
+                    /! /.media-body
+                    /! /.media
+                    /! Start notification indicator
+                    a.media.indicator.inline href="#" 
+                      span.spinner Load more notifications...
+                    /! / End notification indicator
+                  /! / End notification list
+                .dropdown-footer
+                  a href="#"  See All
+              /! / End dropdown menu
+            /! /.navbar-notification
+            /! / End notifications
+            /! Start profile
+            li.dropdown.navbar-profile
+              a.dropdown-toggle data-toggle="dropdown" href="#" 
+                span.meta
+                  span.avatar
+                    img.img-circle alt="admin" src="http://img.djavaui.com/?create=35x35,4888E1?f=ffffff" /
+                  span.text.hidden-xs.hidden-sm.text-muted Tol Lee
+                  span.caret
+              /! Start dropdown menu
+              ul.dropdown-menu.animated.flipInX
+                li.dropdown-header Account
+                li
+                  a href="page-profile.html" 
+                    i.fa.fa-user
+                    | View profile
+                li
+                  a href="mail-inbox.html" 
+                    i.fa.fa-envelope-square
+                    | Inbox
+                    span.label.label-info.pull-right 30
+                li
+                  a href="#" 
+                    i.fa.fa-share-square
+                    | Invite a friend
+                li.dropdown-header Product
+                li
+                  a href="#" 
+                    i.fa.fa-upload
+                    | Upload
+                li
+                  a href="#" 
+                    i.fa.fa-dollar
+                    | Earning
+                li
+                  a href="#" 
+                    i.fa.fa-download
+                    | Withdrawals
+                li.divider
+                li
+                  a href="page-signin.html" 
+                    i.fa.fa-sign-out
+                    | Logout
+              /! / End dropdown menu
+            /! /.dropdown navbar-profile
+            /! / End profile
+          /! / End right navigation
+        /! /.navbar-toolbar
+        /! / End navbar toolbar
+      /! /.header-right
+      /! / End header left

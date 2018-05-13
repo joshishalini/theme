@@ -1,0 +1,42 @@
+aside#sidebar-left.sidebar-circle
+  /! Start left navigation - profile shortcut
+  .sidebar-content
+    .media
+      a.pull-left.has-notif.avatar href="#" 
+        img alt="admin" src="http://img.djavaui.com/?create=50x50,4888E1?f=ffffff" /
+        i.online
+      .media-body
+        h4.media-heading
+          | Hello,
+          span Lee
+        small Web Designer
+  /! /.sidebar-content
+  /! / End left navigation -  profile shortcut
+  /! Start left navigation - menu
+  ul.sidebar-menu
+    /! Start navigation - dashboard
+    li.active
+      a href="/dashboard" 
+        span.icon
+          i.fa.fa-home
+        span.text Dashboard
+        span.selected
+    li.submenu
+      a href="/users" 
+        span.icon
+          i.fa.fa-list-alt
+        span.text User
+        span.arrow
+      ul
+        li
+          a href="/users/new"  Add User
+    li.submenu
+      a href="/roles" 
+        span.icon
+          i.fa.fa-list-alt
+        span.text Role
+        span.arrow
+      ul
+        li
+          a href="/roles/new"  Add Role
+    

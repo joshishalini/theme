@@ -14,7 +14,7 @@
  *= require home/bootstrap
  *= require home/layout.css
  *= require home/animate
- *= require home/font-awesome
+ *= require home/font-awesome.min.css
  *= require home/reset.css
  *= require home/components.css
  *= require home/plugins.css

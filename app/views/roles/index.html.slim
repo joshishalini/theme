@@ -5,11 +5,9 @@ table.table.table-striped.table-bordered.zero-configuration
       th Action
   tbody
     - if @roles.present? 
-      -@roles.each do |user|
+      -@roles.each do |role|
         tr
-          td = user.name
-        
+          td = role.role_name
           td.btn-group
-            = link_to 'Edit',edit_user_path(user) , class: " icon-edit2 large-icon" , title: "Edit"
-            = link_to 'new', new_user_path
-            = link_to 'role', roles_path
+            = link_to '',edit_role_path(role) , class: "fa fa-pencil" , title: "Edit"
+            = link_to '', roles_path(role), class: "btn btn-danger btn-xs", title: "Delete", method: :delete

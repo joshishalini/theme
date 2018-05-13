@@ -1,0 +1,17 @@
+.row
+	.col-lg-3.col-md-3.col-sm-6.col-xs-12
+		.mini-stat-type-6.bg-success.shadow
+			.inner
+				h4 User
+				h3 =@users.count
+			.icon
+				.fa.fa-users
+			=link_to "Manage User", users_path, class: "small-box-footer"
+	.col-lg-3.col-md-3.col-sm-6.col-xs-12
+		.mini-stat-type-6.bg-success.shadow
+			.inner
+				h4 Role
+				h3 =@roles.count
+			.icon
+				.fa.fa-users
+			=link_to "Manage Role", roles_path, class: "small-box-footer"
