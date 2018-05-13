@@ -10,5 +10,14 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
 
- *= require home/bootstrap.min
-
+ *= require_self
+ *= require home/bootstrap
+ *= require home/layout.css
+ *= require home/animate
+ *= require home/font-awesome
+ *= require home/reset.css
+ *= require home/components.css
+ *= require home/plugins.css
+ *= require home/default.theme.css
+ *= require home/custom.css
+ */

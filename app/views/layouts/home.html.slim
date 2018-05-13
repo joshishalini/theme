@@ -13,7 +13,7 @@ head
  
   meta content="admin, admin template, bootstrap3, clean, fontawesome4, good documentation, lightweight admin, responsive dashboard, webapp" name="keywords" /
   meta content=("Djava UI") name="author" /
-  title DASHBOARD | BLANKON - Fullpack Admin Theme
+  title User Role Management
   /! / END META SECTION
   /! START @FONT STYLES
   link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" /
@@ -21,19 +21,7 @@ head
   /! / END FONT STYLES
   /! START @GLOBAL MANDATORY STYLES
   = stylesheet_link_tag "home", :media => "all", 'data-turbolinks-track': 'reload'
-  link href="../../../assets/global/plugins/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" /
-  /! / END GLOBAL MANDATORY STYLES
-  /! START @PAGE LEVEL STYLES
-  link href="../../../assets/global/plugins/bower_components/fontawesome/css/font-awesome.min.css" rel="stylesheet" /
-  link href="../../../assets/global/plugins/bower_components/animate.css/animate.min.css" rel="stylesheet" /
-  /! / END PAGE LEVEL STYLES
-  /! START @THEME STYLES
-  link href="../../../assets/admin/css/reset.css" rel="stylesheet" /
-  link href="../../../assets/admin/css/layout.css" rel="stylesheet" /
-  link href="../../../assets/admin/css/components.css" rel="stylesheet" /
-  link href="../../../assets/admin/css/plugins.css" rel="stylesheet" /
-  link#theme href="../../../assets/admin/css/themes/default.theme.css" rel="stylesheet" /
-  link href="../../../assets/admin/css/custom.css" rel="stylesheet" /
+  = javascript_include_tag "home", 'data-turbolinks-track': 'reload'
 body.page-header-fixed.page-sidebar-fixed.page-footer-fixed
   /![if lt IE 9]
     | <p class="upgrade-browser">Upps!! You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p
@@ -580,11 +568,7 @@ body.page-header-fixed.page-sidebar-fixed.page-footer-fixed
           i.fa.fa-lock
         a#logout.pull-left data-placement="top" data-title="Logout" data-toggle="tooltip" data-url="page-lock-screen.html" href="javascript:void(0);" 
           i.fa.fa-power-off
-      /! /.sidebar-footer
-      /! / End left navigation - footer
-    /! /#sidebar-left
-    /! / END SIDEBAR LEFT
-    /! START @PAGE CONTENT
+
     section#page-content
       /! Start page header
       .header-content
@@ -596,9 +580,7 @@ body.page-header-fixed.page-sidebar-fixed.page-footer-fixed
           span.label You are here:
           ol.breadcrumb
             li.active Dashboard
-      /! /.header-content
-      /! / End page header
-      /! Start body content
+
       .body-content.animated.fadeIn
         .row
           .col-md-12
@@ -607,44 +589,13 @@ body.page-header-fixed.page-sidebar-fixed.page-footer-fixed
                 i.fa.fa-rocket.text-block style=("font-size: 70px;margin-bottom: 20px;") 
                 | Blankon
                 | Seed Project
-      /! /.body-content
-      /! / End body content
-      /! Start footer content
+
       footer.footer-content
         span
-          | 2014 -
+          | 2018 -
           span#copyright-year
           | \&copy; Blankon Admin. Created by
-          = succeed "," do
-            a href="http://djavaui.com/" target="_blank"  Djava UI
-          | Yogyakarta ID
         span.pull-right 0.01 GB(0%) of 15 GB used
-      /! /.footer-content
-      /! / End footer content
-    /! /#page-content
-    /! / END PAGE CONTENT
-  /! /#wrapper
-  /! / END WRAPPER
-  /! START @BACK TOP
+
   #back-top.animated.pulse.circle
     i.fa.fa-angle-up
-  /! /#back-top
-  /! / END BACK TOP
-  /! START JAVASCRIPT SECTION (Load javascripts at bottom to reduce load time)
-  /! START @CORE PLUGINS
-  script src="../../../assets/global/plugins/bower_components/jquery/dist/jquery.min.js" 
-  script src="../../../assets/global/plugins/bower_components/jquery-cookie/jquery.cookie.js" 
-  script src="../../../assets/global/plugins/bower_components/bootstrap/dist/js/bootstrap.min.js" 
-  script src="../../../assets/global/plugins/bower_components/jquery-nicescroll/jquery.nicescroll.min.js" 
-  script src="../../../assets/global/plugins/bower_components/jquery-easing-original/jquery.easing.1.3.min.js" 
-  script src="../../../assets/global/plugins/bower_components/bootbox/bootbox.js" 
-  script src="../../../assets/global/plugins/bower_components/retina.js/dist/retina.min.js" 
-  /! / END CORE PLUGINS
-  /! START @PAGE LEVEL PLUGINS
-  script src="../../../assets/global/plugins/bower_components/jquery.gritter/js/jquery.gritter.min.js" 
-  /! / END PAGE LEVEL PLUGINS
-  /! START @PAGE LEVEL SCRIPTS
-  script src="../../../assets/admin/js/apps.js" 
-  script src="../../../assets/admin/js/pages/blankon.dashboard.js" 
-  /! / END PAGE LEVEL SCRIPTS
-  /! / END JAVASCRIPT SECTION
